@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+</head>
+
+<body>
+    <div id="register" class="container">
+        <img src="https://cdn.discordapp.com/attachments/1129051061223706637/1312038075961970699/Ruddy.gif?ex=674b0a2d&is=6749b8ad&hm=4ee087428f0dea8fddd3418d8383178451925f04a42f9e715ed17db7de2ef188&" alt="Ruddy" class="dragon"/>
+        <div class="wrapper">
+            <form id="register-form">
+                <h1 class="title">Register</h1>
+
+                <div class="input-box-row">
+                    <div class="input-box-group">
+                        <div class="input-box">
+                            <input type="text" id="reg-name" name="name" placeholder="" required />
+                            <label for="reg-name">Name</label>
+                        </div>
+                    </div>
+
+                    <div class="input-box-group">
+                        <div class="input-box">
+                            <input type="text" id="reg-username" name="username" placeholder="" required />
+                            <label for="reg-username">Username</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-box-row">
+                    <div class="input-box-group">
+                        <div class="input-box">
+                            <input type="password" id="reg-password" name="password" placeholder="" required />
+                            <label for="reg-password">Password</label>
+                            <i class="bx bxs-lock-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="input-box-group">
+                        <div class="input-box">
+                            <input type="password" id="reg-confirm" name="confirm" placeholder="" required />
+                            <label for="reg-confirm">Confirm</label>
+                            <i class="bx bxs-lock-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-box-single">
+                    <div class="input-box">
+                        <button type="submit" value="Register" class="btn">Register</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="register-message">
+                <p id="register-message"></p>
+            </div>
+
+            <div class="register-link">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+            <p class="copyright">© 2024 Eli Bragais</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+

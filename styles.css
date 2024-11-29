@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Faculty+Glyphic&family=Lancelot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Faculty+Glyphic&display=swap');
+body {
+  display: block;
+  overflow-x: hidden;
+  background-color: #a5a9b4;
+}
+nav {
+  background-color: #22171b;
+}
+.navbar-brand img {
+  max-height: 100px;
+}
+.navbar-brand {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color:#f03030;
+}
+
+.navbar-toggler{
+color:#f03030;
+}
+
+.navbar-toggler a:hover{
+color:#f03030;
+}
+
+.navbar-brand:hover{
+  color:#bdaa41;
+
+}
+
+nav ul li a {
+  color: #bdaa41;
+  font-size: 32px;
+  margin: auto 10px;
+  font-family: "Cormorant SC", serif;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  color: #f03030;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 1000;
+  color: #5a0000;
+  text-align: left;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+section p {
+  text-align: justify;
+  font-size: 24px;
+  font-weight: 300;
+  color: #f6e7ea;
+  font-family:"Lancelot", serif;
+}
+
+#hero .col {
+  color: #f03030;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+#hero .img-col {
+  justify-content: flex-end;
+  margin-top: 100px;
+  margin-bottom: 30px; 
+}
+
+#hero .row {
+  margin-top: 20px;
+
+}
+#hero img {
+  max-width: 120% !important;
+  width: 100%;
+}
+#hero .card {
+  background-color: #5a0000;
+  box-shadow: 11px 7px 16px  #360303;
+  border: 0;
+  text-align: center;
+  font-family: "Cormorant SC", serif;
+  color: #f6e7ea;
+  font-size: 34px;
+}
+
+#hero.card .card-text{
+  font-family: "Lancelot", serif;;
+}
+
+#hero .icon {
+  width: 250px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+#projects .projects {
+  margin-bottom: 50px;
+
+}
+#projects .card-mb-3{
+background-color:#717d71;
+}
+
+#projects .card-title{
+  font-family: "Cormorant SC", serif;
+  font-size: 34px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+}
+
+#contact {
+
+  text-align: center;
+  background-color: #22171b;
+  color: #f03030;
+}
+#contact h1 {
+  text-align: center;
+  color: #f03030;
+}
+
+#contact p {
+  text-align: center;
+  font-size: 24px;
+  color: #f6e7ea;
+}
+
+#contact .socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+#contact .socials a {
+  font-size: 36px; 
+  color:  #bdaa41; 
+  text-decoration: none; 
+  transition: color 0.3s;
+}
+
+#contact .socials a:hover {
+  color: #f03030; 
+}

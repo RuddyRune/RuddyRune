@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Faculty+Glyphic&family=Lancelot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Faculty+Glyphic&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant SC", serif;
+}
+
+/* Body and Background */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background:url(https://i.pinimg.com/originals/27/ae/dd/27aeddce4f87255fec7088d0afafa3d2.gif);
+  background-repeat:no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+/* Container */
+
+.container {
+  position: relative;
+  width: 600px;
+  padding: 100px 0;
+}
+
+.dragon {
+  position: absolute;
+  top: -270px;
+  left: -5px;
+  width: -300px;
+  height: 500px;
+  z-index: 10;
+}
+
+/* Wrapper, Form, & Header */
+
+.wrapper {
+  width: 600px;
+  background: linear-gradient(0deg, #2e02024a, #00000000);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 30px 0px;
+}
+
+.wrapper form {
+  padding: 0px 30px 0px 30px;
+}
+
+.wrapper form h1 {
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 2px 2px 17px #f03030;
+}
+
+.wrapper form .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff1f1;
+  user-select: none;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Box - Standard Types */
+
+.wrapper form .input-box-single {
+  position: relative;
+  width: 100%;
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+.wrapper form .input-box-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.wrapper form .input-box-group {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 50%;
+}
+
+/* Form - Input Box */
+
+.wrapper form .input-box {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.wrapper form .input-box input:focus,
+.wrapper form .input-box input:valid {
+  border: 2px solid rgba(97, 14, 14, 0.8);
+  transition: border-color 0.3s ease;
+}
+
+.wrapper form .input-box label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.wrapper form .input-box input:focus ~ label,
+.wrapper form .input-box input:not(:placeholder-shown) ~ label {
+  top: 0%;
+  font-size: 16px;
+  color: #ffffff;
+  background: #f03030;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+  transform: translateY(-60%);
+}
+
+.wrapper form .input-box input:invalid:not(:placeholder-shown) ~ label {
+  top: 0%;
+  font-size: 16px;
+  color: #f03030;
+  background: #f03030;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+  transform: translateY(-60%);
+}
+
+.wrapper form .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Footer */
+
+.tos {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14.5px;
+  margin: 0px 0 30px;
+  text-shadow: 2px 2px 17px #f03030;
+}
+
+.tos a {
+  cursor: pointer;
+  position: relative;
+  padding: 2px 5px 2px 5px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #4b1c1c;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.tos a:hover {
+  background: #f03030;
+  outline: none;
+}
+
+.remember-forgot {
+  display: flex;
+  align-items: center;
+  font-size: 14.5px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 17px #f03030;
+  width: 100%;
+  height: 40px;
+}
+
+.remember-forgot input {
+  display: none;
+}
+
+.remember-forgot label {
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.remember-forgot label:hover,
+.remember-forgot input:checked + label:hover {
+  background: rgb(255, 255, 255);
+  color: #bdaa41;;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+.remember-forgot a {
+  cursor: pointer;
+  position: relative;
+  padding: 2px 5px 2px 5px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.remember-forgot a:hover {
+  background:#f03030;
+  outline: none;
+}
+
+.remember-forgot input:checked + label {
+  background: #f03030;;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color:  #f03030;
+  font-weight: 1000;
+  font-size: 30px;
+}
+
+.wrapper .btn:hover {
+  outline: none;
+  box-shadow: 0 0 10px rgba(54, 7, 7, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+.wrapper .register-message {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+  text-shadow: 2px 2px 17px rgba(139, 181, 215, 0.709);
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+  text-shadow: 2px 2px 17px #bdaa41;
+}
+
+.register-link p {
+  margin-top: 10px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 10px;
+  padding: 2px 5px 2px 5px;
+}
+
+.register-link p a:hover {
+  background: #bdaa41;;
+  border-radius: 5px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 10px;
+  text-shadow: 2px 2px 17px #bdaa41;;
+  user-select: none;
+}
+
